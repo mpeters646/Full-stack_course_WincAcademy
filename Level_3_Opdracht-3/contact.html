@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>FED | opdracht 6</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="semantic-border">
+            <h1>Mijn pagina voor Winc Academy Front-end Developer opleiding.</h1>
+        </header>
+        <nav class="navbar semantic-border">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <main class="semantic-border">
+            <div class="container">
+                <h2>Contact formulier</h2>
+                <p>Vragen staat vrij, dus schroom niet om het contact formulier in te vullen.</p>
+
+                <form name="contact" method="POST" data-netlify="true">
+                    <label for="name">Naam: </label><input type="text" id="name">
+                    <label for="email">Email: </label><input type="email" id="email">
+                    <label for="message">Bericht: </label><textarea name="message" id="message" cols="30"
+                        rows="10"></textarea>
+                    <button type="submit">Verstuur</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer class="semantic-border">
+        <p class="small">Deze pagina is gemaakt door Marco Peters tijdens de Full-Stack opleiding bij Winc Academy
+            &copy;2021
+        </p>
+    </footer>
+
+</body>
+
+</html>
