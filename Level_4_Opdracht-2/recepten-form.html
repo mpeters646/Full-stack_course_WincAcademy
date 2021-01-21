@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>FED | opdracht 6</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="semantic-border">
+            <h1>Mijn pagina voor Winc Academy Front-end Developer opleiding.</h1>
+        </header>
+        <nav class="navbar semantic-border">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <main class="semantic-border">
+            <div class="container">
+                <h2>Recepten formulier</h2>
+
+                <form class="recept-form" name="recept-form" method="POST" data-netlify="true">
+
+                    <label for="name">Naam:</label><input type="text" name="name">
+                    <label for="email">Email:</label><input type="email" name="email">
+                    <label for="phone">Telefoonnummer:</label><input type="tel" name="phone">
+                    <label for="age">Leeftijd:</label><input type="number" name="age">
+                    <label for="birth-date">Geboortedatum:</label><input type="date" name="birth-date">
+
+                    <div class="recept-form-radio-button">
+                        <label>Gender:</label><br>
+                        <label for="male">Man</label><input class="radio-button" type="radio" name="male" id="male"
+                            value="male">
+                        <label for="female">Vrouw</label><input class="radio-button" type="radio" name="female"
+                            id="female" value="female">
+                    </div>
+
+                    <div>
+                        <label for="frans">frans</label><input class="recept-checkbox" type="checkbox" name="frans"
+                            id="frans">
+                        <label for="italiaans">italiaans</label><input class="recept-checkbox" type="checkbox"
+                            name="italiaans" id="italiaans">
+                        <label for="spaans">spaans</label><input class="recept-checkbox" type="checkbox" name="spaans"
+                            id="spaans">
+                        <label for="arabisch">arabisch</label><input class="recept-checkbox" type="checkbox"
+                            name="arabisch" id="arabisch">
+                    </div>
+
+                    <label for="color">Favoriete kleur:</label><input type="color" name="color" id="color">
+                    <label for="bio">Biogafie:</label><textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                    <label for="upload-recept">Upload je laatste recept:</label><input type="file" name="upload-recept"
+                        id="upload-recept">
+                    <label for="website">Url naar je recepten website</label><input type="url" name="website"
+                        id="website">
+
+                    <button type="reset">Reset</button>
+                    <button type="submit">Verstuur</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer class="semantic-border">
+        <p class="small">Deze pagina is gemaakt door Marco Peters tijdens de Full-Stack opleiding bij Winc Academy
+            &copy;2021
+        </p>
+    </footer>
+
+</body>
+
+</html>
