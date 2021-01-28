@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+p {
+  margin: 0.625rem 0;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #40191d;
+  display: flex;
+  align-items: center;
+}
+
+.logo img,
+.logo-klein img {
+  max-width: 80%;
+  position: relative;
+  left: 0.938rem;
+}
+
+.navigation ul {
+  margin: 1.25rem;
+  list-style-type: none;
+}
+
+.navigation ul li a {
+  color: #fff;
+  display: block;
+  margin: 1.25rem 0.625rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* HOMEPAGE */
+.hero-slider {
+  height: 21.875rem;
+  background: #fff7e9 url(./img/photo-art.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  background-color: rgba(252, 240, 218, 0.75);
+}
+
+.cta-heading {
+  font-size: 1.8rem;
+  width: 12.5rem;
+  color: #2f1416;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  top: 1.25rem;
+  left: 3.75rem;
+}
+
+.cta-text {
+  color: #2f1416;
+  position: absolute;
+  bottom: 7.5rem;
+  left: 1.5625rem;
+}
+
+.cta-btn {
+  width: 6.25rem;
+  position: absolute;
+  bottom: 3.125rem;
+  right: 7.5rem;
+  background-color: #2f1416;
+  padding: 0.9375rem 0.625rem;
+
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.cta-btn a {
+  color: #fcf0da;
+  text-decoration: none;
+}
+
+.main-text {
+  background-color: #fff;
+  border: 0.0625rem solid #ffeac3;
+  margin: 1.5625rem;
+  padding: 1.5625rem 1.5625rem 0;
+}
+
+.main-text h1 {
+  color: #522025;
+  text-align: center;
+  /* margin: 0; */
+}
+
+.main-text p {
+  color: #522025;
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+
+.blog-art {
+  height: 31.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.blog-art:last-child {
+  margin-bottom: 0;
+}
+
+.blog-art-1,
+.blog-art-2,
+.blog-art-3,
+.blog-art-4 {
+  height: 100%;
+  position: relative;
+}
+
+.blog-art-1 {
+  background: url(./img/defenitie-van-kunst.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-art-2 {
+  background: url(./img/maker-of-waarnemer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-art-3 {
+  background: url(./img/kunst-als-ambacht.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-art-4 {
+  background: url(./img/kunst-geschiedenis.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.blog-heading,
+.blog-text,
+.blog-link {
+  padding: 0 1.25rem;
+  color: #2f1416;
+  position: absolute;
+}
+
+.blog-heading {
+  top: 3.125rem;
+}
+
+.blog-text {
+  top: 7.5rem;
+  margin: 1.25rem 0;
+}
+
+.blog-link {
+  top: 25rem;
+  cursor: pointer;
+}
+
+/* KUNSTVORMEN */
+.beeldende-kunst h2,
+.beeldhouw-kunst h2,
+.fotografie h2 {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.beeldende-kunst p,
+.beeldhouw-kunst p,
+.fotografie p {
+  margin: 20px 25px;
+  /* text-align: justify; */
+}
+.beeldende-kunst iframe {
+  width: 100%;
+}
+
+.picture {
+  width: 100%;
+}
+
+/* BLOG */
+.kunst,
+.blog-posts,
+.contact,
+.nieuwsbrief {
+  color: #522025;
+}
+
+.kunst h1,
+.blog-posts h1,
+.contact h1,
+.nieuwsbrief h1 {
+  margin: 1.5625rem;
+  text-align: center;
+}
+
+.blog-post {
+  margin: 20px 0;
+  background-color: #fffdf9;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  margin: 25px 0;
+}
+
+.blog-post-1 .image {
+  background: url(./img/defenitie-van-kunst.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-post-2 .image {
+  background: url(./img/maker-of-waarnemer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-post-3 .image {
+  background: url(./img/kunst-als-ambacht.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blog-post-4 .image {
+  background: url(./img/kunst-geschiedenis.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.post-heading,
+.post-text,
+.post-link {
+  padding: 0.625rem 1.5625rem;
+}
+
+.post-link {
+  color: #522025;
+  margin-bottom: 1.25rem;
+}
+/* CONTACTPAGE */
+.contact,
+.nieuwsbrief {
+  margin: 50px 25px;
+}
+
+.contact form,
+.nieuwsbrief form {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.nieuwsbrief input,
+.nieuwsbrief textarea,
+.nieuwsbrief select {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #522025;
+  padding: 5px;
+}
+
+.btn {
+  color: #522025;
+  background-color: #fff;
+  border: 1px solid #522025;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/* NIEUWSBRIEFPAGE */
+.radio-btn {
+  display: inline-block;
+  margin: 0.938rem 0;
+}
+
+.radio-btn input {
+  margin: 0.4rem;
+}
+/* FOOTER */
+.footer {
+  height: 100%;
+  background-color: #40191d;
+  padding: 1.25rem 0 0.625rem;
+}
+
+.footer nav {
+  color: #fff;
+}
+
+.footer nav li {
+  list-style-type: none;
+}
+
+.footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.nav-1 h4,
+.nav-2 h4,
+.nav-1 ul,
+.nav-2 ul {
+  text-align: center;
+}
+
+.nav-1 h4,
+.nav-2 h4 {
+  margin: 1.25rem 0;
+}
+
+.social {
+  margin-bottom: 0.9375rem;
+}
+
+.social ul {
+  text-align: center;
+}
+
+.social ul li {
+  display: inline;
+}
+
+.social ul li a i {
+  font-size: 2.5rem;
+  margin: 20px 20px;
+}
+
+.social p {
+  margin: 0.625rem 1.25rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.small {
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0 1.25rem;
+}
+
+.small a {
+  color: #fff;
+}
+
+/* MediaQueries */
+
+@media (min-width: 576px) {
+  .logo {
+    height: 12.5rem;
+  }
+  .logo img {
+    max-width: 45%;
+    top: 0.625rem;
+  }
+
+  .logo-klein img {
+    width: 30%;
+  }
+
+  .navigation {
+    position: absolute;
+    right: 0;
+  }
+
+  .navigation ul li a {
+    text-align: right;
+  }
+
+  .cta-heading {
+    width: 28.125rem;
+    top: 2.5rem;
+  }
+
+  .cta-text {
+    bottom: 3.75rem;
+  }
+
+  .cta-btn {
+    bottom: 4.0625rem;
+    right: 5rem;
+  }
+
+  .blog-heading,
+  .blog-text,
+  .blog-link {
+    padding: 0 3.75rem;
+  }
+
+  /* KUNSTVORMEN */
+
+  /* BLOG */
+  .blog-posts {
+    background-color: #fffdf9;
+  }
+
+  .blog-post:last-child {
+    margin: 0;
+  }
+
+  .kunst h1,
+  .blog-posts h1,
+  .contact h1,
+  .nieuwsbrief h1 {
+    margin: 75px;
+  }
+
+  .blog-post-1,
+  .blog-post-2,
+  .blog-post-3,
+  .blog-post-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .blog-post-1,
+  .blog-post-3 {
+    background-color: #fff7e7;
+  }
+
+  .blog-post-1 .image,
+  .blog-post-3 .image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .blog-post-1 .post-container,
+  .blog-post-3 .post-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .blog-post-2 .post-container,
+  .blog-post-4 .post-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .blog-post-2 .image,
+  .blog-post-4 .image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  /* CONTACT */
+  .contact,
+  .nieuwsbrief {
+    margin: 50px 25px;
+  }
+
+  .contact form,
+  .nieuwsbrief form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact input,
+  .contact textarea,
+  .nieuwsbrief input,
+  .nieuwsbrief textarea {
+    margin: 10px 0;
+  }
+
+  /* NIEUWSBRIEF */
+  .radio-btn {
+    display: inline-block;
+    margin: 30px 25px;
+  }
+
+  .radio-btn input {
+    margin: 0.4rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 3.125rem 1fr 1fr 3.125rem;
+    grid-template-rows: auto;
+  }
+
+  .nav-1 {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+  }
+
+  .nav-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .social {
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+  }
+
+  .small {
+    grid-column: 2 / span 2;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 55%;
+  }
+
+  .navigation {
+    position: absolute;
+    right: 0;
+  }
+
+  .navigation ul li {
+    display: inline-block;
+  }
+
+  .cta-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 35rem;
+    top: 2.8rem;
+  }
+
+  .cta-text {
+    font-size: 1.5rem;
+    bottom: 3.125rem;
+    left: 3.125rem;
+  }
+
+  .cta-btn {
+    bottom: 2.8125rem;
+    right: 6.25rem;
+  }
+
+  .main-text {
+    margin: 3.125rem;
+    padding: 3.125rem;
+  }
+
+  .blog-heading,
+  .blog-text,
+  .blog-link {
+    padding: 1.875rem 6.25rem;
+  }
+
+  /* KUNSTVORMEN */
+
+  /* BLOG */
+
+  /* CONTACT */
+  .contact form,
+  .nieuwsbrief form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    grid-template-columns: 3.125rem 1fr 1fr 1fr 3.125rem;
+  }
+  .social {
+    grid-column: 4 / 5;
+    grid-row: 1 /2;
+  }
+
+  .social ul li a i {
+    font-size: 1.25rem;
+    margin: 1.25rem 0.9375rem;
+  }
+
+  .small {
+    grid-column: 2 / span 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 992px;
+    margin: 0 auto;
+    background-color: #fffdf9;
+  }
+
+  .hero-slider {
+    height: 30rem;
+  }
+  .navigation {
+    right: 1.25rem;
+  }
+
+  .navigation ul li a {
+    margin: 1.25rem 1.8rem;
+  }
+
+  .cta-heading {
+    margin: 0.625rem 3.125rem;
+  }
+
+  .cta-text {
+    font-size: 1.875rem;
+    font-weight: 200;
+    bottom: 2.5rem;
+    left: 6.25rem;
+  }
+
+  .cta-btn {
+    width: 12rem;
+    padding: 1.5625rem;
+  }
+
+  .cta-btn a {
+    font-size: 1.5rem;
+  }
+
+  .main-text {
+    padding: 6.25rem 4.6875rem;
+  }
+
+  .main-text h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .main-text p {
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+    line-height: 2.2;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0.9375rem;
+  }
+
+  .blog-art {
+    height: 45rem;
+    margin: 0;
+  }
+
+  .blog-art-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .blog-art-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .blog-heading,
+  .blog-text,
+  .blog-link {
+    padding: 1.875rem 3.125rem;
+  }
+
+  .blog-heading {
+    font-size: 1.6rem;
+  }
+
+  .blog-text {
+    font-size: 1.5rem;
+    padding: 3.125rem;
+  }
+
+  .blog-text p {
+    line-height: 1.4;
+  }
+
+  .blog-link {
+    font-size: 1.2rem;
+    padding: 11.25rem 3.125rem;
+  }
+
+  /* KUNSTVORMEN */
+  .kunst {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .kunst h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .beeldende-kunst {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+  }
+
+  .beeldhouw-kunst {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+  }
+
+  .fotografie {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+  }
+
+  /* BLOG */
+
+  /* CONTACT */
+
+  .small {
+    padding: 0.9375rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation ul {
+    margin: 6.5rem;
+  }
+
+  .navigation ul li a {
+    font-size: 1.5rem;
+  }
+
+  /* KUNSTVORMEN */
+
+  /* BLOG */
+
+  /* CONTACT */
+  .contact input,
+  .contact textarea,
+  .nieuwsbrief input,
+  .nieuwsbrief textarea {
+    margin: 15px 0;
+  }
+}

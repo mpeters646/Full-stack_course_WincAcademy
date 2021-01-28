@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunst met een grote K | NIEUWSBRIEF</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><img src="./img/kunst-logo.png" alt="Kunst logo"></div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kunst.html">KUNSTVORMEN</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="nieuwsbrief">
+        <h1>Nieuwsbrief</h1>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Voornaam: </label><br>
+            <input type="text" name="first-name" />
+          </p>
+          <p>
+            <label>Achternnaam: </label><br>
+            <input type="text" name="last-name" />
+          </p>
+          <p>
+            <label>Email: </label><br>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label>Leeftijd: </label>
+            <input type="number" name="number" />
+          </p>
+
+          <p>
+            <label>Programeer taal: </label><br>
+            <select name="prog-lang">
+              <option value="sel">Select</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+              <option value="pyt">Python</option>
+              <option value="php">PHP</option>
+              <option value="cplus">C++</option>
+            </select>
+          </p>
+
+          <div class="radio-btn">
+            <input type="radio" id="huey" name="drone" value="huey">
+            <label for="huey">Man</label>
+          </div>
+
+          <div class="radio-btn">
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Vrouw</label>
+          </div>
+
+          <div class="radio-btn">
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Anders</label>
+          </div>
+
+          <p>
+            <label>Nieuwsbrief: </label><br>
+            <textarea name="newsletter">Ja, schrijf mij in voor jullie nieuwsbrief.</textarea>
+          </p>
+          <p>
+            <button class="btn" type="reset">Reset</button>
+            <button class="btn" type="submit">Verzend</button>
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="nav-1">
+        <h4>Kunstvormen</h4>
+        <ul>
+          <li><a href="https://nl.wikipedia.org/wiki/Beeldende_kunst" target="_blank">Beeldende Kunst</a></li>
+          <li><a href="https://nl.wikipedia.org/wiki/Schilderkunst" target="_blank">Schilderkunst</a></li>
+          <li><a href="https://nl.wikipedia.org/wiki/Fotografie" target="_blank">Fotografie</a></li>
+          <li><a href="https://nl.wikipedia.org/wiki/Beeldhouwkunst" target="_blank">Beeldhouwkunst</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-2">
+        <h4>Title</h4>
+        <ul>
+          <li><a href="https://nl.wikipedia.org/wiki/Kunstuitleen_en_Kunst_in_Huis" target="_blank">Kunstuitleen</a>
+          </li>
+          <li><a href="https://nl.wikipedia.org/wiki/Kunstverzameling" target="_blank">Kunstverzameling</a></li>
+          <li><a href="https://nl.wikipedia.org/wiki/Restauratie_(kunst)" target="_blank">Kunstrestauratie</a></li>
+          <li><a href="https://nl.wikipedia.org/wiki/Kunstevenement" target="_blank">Kunstevenement</a></li>
+        </ul>
+      </nav>
+      <nav class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="https://nl.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p>
+          Kunstlaan 123 <br>
+          4567AB Kunststad <br>
+          0987-654321 <br>
+          <i class="fas fa-at"></i> <a href="mailto:kunst@grote-k.art">kunst@grote-k.art</a>
+        </p>
+      </nav>
+      <p class="small">Marco Peters &copy; 2021 met dank aan <a href="https://nl.wikipedia.org/wiki/Kunst"
+          target="_blank">Wikipedia</a> voor de teksten en de inspiratie.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
