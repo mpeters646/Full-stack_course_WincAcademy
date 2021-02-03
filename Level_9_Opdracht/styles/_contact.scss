@@ -1,0 +1,15 @@
+/* Contact Section */
+.contact {
+  padding: $padding-basis;
+  &__wrapper .contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__form {
+    padding: $padding-basis;
+  }
+}
+
+.copy__wrapper {
+  padding-left: $padding-basis;
+}

@@ -1,0 +1,23 @@
+/* Featured Section */
+.featured {
+  padding: $padding-basis;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 300px;
+  }
+
+  &__text__container {
+    @include text-basis;
+  }
+
+  &__text {
+    text-align: justify;
+    padding: $padding-basis;
+    line-height: 1.4em;
+  }
+}
