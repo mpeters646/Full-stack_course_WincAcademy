@@ -596,7 +596,6 @@ p {
   }
 
   .container {
-    max-width: 992px;
     margin: 0 auto;
     background-color: #fffdf9;
   }
