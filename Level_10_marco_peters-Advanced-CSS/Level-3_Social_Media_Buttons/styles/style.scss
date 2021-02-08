@@ -1,0 +1,103 @@
+@mixin font-awesom-before($font-face, $font-code) {
+  font-family: $font-face;
+  font-weight: 900;
+  content: $font-code;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 25px;
+}
+
+/* SOCIAL MEDIA BUTTONS */
+.social-media {
+  font-size: 20px;
+  position: fixed;
+  top: 100%;
+  right: -240px;
+  transform: translateY(-102%);
+
+  .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    padding-right: 30px;
+  }
+
+  a {
+    color: #fff;
+    padding: 20px 40px 20px 20px;
+    display: block;
+  }
+
+  &__blog {
+    background-color: #e17b77;
+
+    &::before {
+      @include font-awesom-before('Font Awesome 5 Free', '\f5fc');
+    }
+
+    &:hover {
+      transform: translateX(-75%);
+    }
+  }
+
+  &__twitter {
+    background-color: #00aced;
+
+    &::before {
+      @include font-awesom-before('Font Awesome 5 Brands', '\f099');
+    }
+
+    &:hover {
+      transform: translateX(-75%);
+    }
+  }
+
+  &__linkedin {
+    background-color: #007bb6;
+
+    &::before {
+      @include font-awesom-before('Font Awesome 5 Brands', '\f0e1');
+    }
+
+    &:hover {
+      transform: translateX(-75%);
+    }
+  }
+
+  &__facebook {
+    background-color: #3b5998;
+
+    &::before {
+      @include font-awesom-before('Font Awesome 5 Brands', '\f39e');
+    }
+
+    &:hover {
+      transform: translateX(-75%);
+    }
+  }
+
+  &__github {
+    background-color: #333;
+
+    &::before {
+      @include font-awesom-before('Font Awesome 5 Brands', '\f09b');
+    }
+
+    &:hover {
+      transform: translateX(-75%);
+    }
+  }
+}
