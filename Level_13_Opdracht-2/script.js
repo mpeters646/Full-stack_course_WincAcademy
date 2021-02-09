@@ -38,7 +38,7 @@ if (name === 'Bram' || name === 'Sarah') {
   console.log('Je heet geen Bram of Sarah en moet gewoon betalen!');
 }
 
-if (totalAmount > 100) {
+if (totalAmount >= 100) {
   console.log('Je krijgt een gratis flesje champagne');
 } else if (totalAmount > 50) {
   console.log('Je krijgt een gratis portie nachos');
