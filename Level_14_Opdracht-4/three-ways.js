@@ -15,7 +15,7 @@ const multiplyWithNumbers2 = function (num1, num2) {
 console.log(multiplyWithNumbers2(2, 5));
 
 /* Arrow function */
-const multiplyWithNumbers3 = function (num1, num2) {
+const multiplyWithNumbers3 = (num1, num2) => {
   const totalMultiply3 = num1 * num1 + num2 * num2;
   return totalMultiply3 * totalMultiply3;
 };
