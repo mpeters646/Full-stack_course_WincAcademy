@@ -3,17 +3,20 @@
     ======================== */
 const ageCheck = function (age) {
   if (age >= 18) {
-    return 'Hello there';
+    return true;
   }
-  return 'Hey kiddo';
+  return false;
 };
 
 const greeting = function (age) {
-  return ageCheck(age);
+  if (ageCheck(age)) {
+    return 'Hello there';
+  } else {
+    return 'Hey kiddo';
+  }
 };
 
 console.log(greeting(11));
-console.log(greeting(17));
 console.log(greeting(18));
 console.log(greeting(39));
 
@@ -23,8 +26,7 @@ console.log(greeting(39));
 
 // Exercise 1
 const vatOnly = function (price, vat) {
-  const onlyVat = (price * vat) / 100;
-  return onlyVat;
+  return price * (vat / 100);
 };
 
 const priceInclVat = function (price, vat) {
