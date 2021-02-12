@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Functions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Opdracht - For loops</h1>
+
+    <h2>1. Even Odd Reporter</h2>
+    <p>Schrijf een loop die "iterate" van 0 tot 20. <br>
+      Voor elke loop, check of het huidige nummer even is of oneven (odd). <br>
+      Console.log het nummer.</p>
+    <p class="light-text">Tip: gebruik de modulo functionaliteit.</p>
+
+    <p>Resultaat in de console:</p>
+    <ol>
+      <li>is oneven</li>
+      <li>is even</li>
+      <li>is oneven</li>
+      <li>is even</li>
+      <li>is oneven</li>
+      <li>is even</li>
+      <li>is oneven</li>
+      <li>etc...</li>
+    </ol>
+
+    <br>
+    <br>
+
+    <h2>2. Multiplication tables</h2>
+    <p>Iedereen kent ze nog wel: de tafel tabellen van de basischool. We gaan nu een script schrijven dat de tafel
+      tabellen
+      voor je print in de console. <br>
+      Schrijf een loop die "iterate" van 0 tot 10. <br>
+      Gebruik voor het eerste voorbeeld de tafel van 9. <br>
+      Console.log elke keer de uitkomst van de tafel van 9 naar de console.</p>
+    <p class="light-text">Resultaat: <br>
+      1 x 9 = 9 <br>
+      2 x 9 = 18 <br>
+      3 x 9 = 27 <br>
+      etc.....</p>
+
+    <p><strong>Bonus:</strong> gebruik een geneste for-loop, om alle tafels van 1 t/m 10 te printen naar de console.
+      Het resultaat bestaat uit 100 regels code in je console.</p>
+
+    <br>
+    <br>
+
+    <h2>3. The Grade Assigner</h2>
+    <p>Voor de volgende for-loop krijg je de volgende functie cadeau:</p>
+    <p class="light-text">function assignGrade(score) { <br>
+      if (score &gr; 90) { <br>
+      return 'A'; <br>
+      } else if (score &gr; 80) { <br>
+      return 'B'; <br>
+      } else if (score &gr; 70) { <br>
+      return 'C'; <br>
+      } else if (score &gr; 65) { <br>
+      return 'D'; <br>
+      } else { <br>
+      return 'F'; <br>
+      } <br>
+      }</p>
+
+    <p>Schrijf een for-loop dit "iterate" van 60 tot 100. Dit is de "score" (grade) van de student. <br>
+      Voor elke loop, roep de bovenstaande functie aan met de i (grade) als argument. <br>
+      Console.log vervolgens: "Voor 91 punten, krijg je een A". <br>
+      De uitkomst is 40 regels lang.</p>
+
+    <p class="light-text">"Voor 60 punten, krijg je een F". <br>
+      .... <br>
+      "Voor 66 punten, krijg je een D". <br>
+      .... <br>
+      "Voor 85 punten, krijg je een B" <br>
+      etc etc.</p>
+
+    <div class="light-text">
+      <p>"Open om de antwoorden te zien de developer tools van je browser (rechter muisknop, inspect,
+        tabblad console)"
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="even-odd-reporter.js"></script>
+  <script type="text/javascript" src="multiplication-tables.js"></script>
+  <script type="text/javascript" src="grade-assigner.js"></script>
+</body>
+
+</html>
