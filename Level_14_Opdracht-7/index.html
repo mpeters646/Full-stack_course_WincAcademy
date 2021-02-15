@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Opdracht - Iterators - oude en nieuwe stijl</h1>
+
+    <p>Het Engelse "to iterate" betekent "iets herhaaldelijk doen". Dingen herhaaldelijk doen is iets dat je in software
+      regelmatig gaat doen. Eén herhaling noemen we dan één "iteratie".</p>
+    <p>Meestal ga je dingen herhaaldelijk doen als je een verzameling van (vergelijkbare) dingen hebt, zoals in het
+      geval van
+      een array. Een praktisch voorbeeld: je hebt een array van test-scores en je wil weten wat de gemiddelde test-score
+      is,
+      of je wil weten wat de laagste of hoogste test-score is. Je bent dan aan het "itereren over een array".</p>
+
+    <p>In JavaScript kun je op meerdere manieren over dingen itereren.</p>
+
+    <h2>Oude stijl: loops</h2>
+    <p>Loops kun je voor meer gebruiken dan itereren over een lijst van dingen. Maar we hebben het nu wel over die
+      manier van
+      loops gebruiken.</p>
+
+    <h3>While loop:</h3>
+    <ul>
+      <li>Maak en nieuwe map en nieuwe javascript file.</li>
+      <li>Maak een array genaamd colors met de kleuren: yellow, blue, red, orange.</li>
+      <li>Schrijf een while loop die de kleuren in de console logged en stopt wanneer alle kleuren geprint zijn.</li>
+    </ul>
+
+    <h3>For loop:</h3>
+    <ul>
+      <li>Gebruik dezelfde array als startpunt.</li>
+      <li>Schrijf een for loop die de kleuren in de console logged en stopt wanneer alle kleuren geprint zijn.</li>
+      <li>Gebruik de lengte van de array in je for loop: array.length</li>
+    </ul>
+
+    <p>Het schrijven van een for of while loop kan best veel ruimte in beslag nemen. Daarnaast is het ook makkelijk om
+      een
+      foutje te maken.</p>
+
+    <br>
+    <br>
+
+    <h2>Nieuwe stijl: array methods</h2>
+    <p>Omdat itereren over arrays iets is dat zo vaak gebeurt heeft de community die JavaScript verder ontwikkelt wat
+      nieuwe handige dingen bedacht (eigenlijk afgekeken) om dit wat makkelijker, leesbaarder en minder foutgevoelig te
+      maken. Deze nieuwe dingen zijn "<strong>array methods</strong>". Elk array in JavaScript heeft de beschikking over
+      deze ingebouwde functies die itereren over die array. De verschillende <strong>array methods</strong> doen
+      verschillende dingen, maar ze itereren allemaal over een array.</p>
+    <p>Je kan met een paar simpele array methods al veel doen. Er zijn meer array methods waar je later meer over gaat
+      leren.
+      Dus raak vooral nog niet verstrikt in array methods wanneer je gaat googlen.</p>
+
+    <p>Hou het voor nu bij deze ene.</p>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Array.prototype.forEach()</a>
+
+    <br>
+    <br>
+
+    <h3>forEach:</h3>
+    <ul>
+      <li>Gebruik dezelfde kleuren-array als startpunt</li>
+      <li>Gebruik de forEach array method, om alle items in je array te loggen naar de console.</li>
+    </ul>
+    <p>Dit waren simpele oefeningen. De kern van deze oefening zit in het begrijpen van een for loop/ while loop ten
+      opzichte
+      van een array method. Beantwoord de volgende vragen en zet dit als comment onderin je file.</p>
+
+    <ol>
+      <li>Hoeveel regels neemt mijn for loop en mijn while loop in beslag?</li>
+      <li>Hoeveel regels neemt mijn forEach method in beslag?</li>
+      <li>Welke voordelen heeft het gebruiken van een array method nog meer t.o.v. een for of een while loop? Welke
+        methode vind je bijvoorbeeld makkelijker leesbaar? Waarom?</li>
+      <li>Kun je een array method gebruiken op een object? <strong>Het antwoord is nee.</strong> <br>
+        Stel je hebt een object met 45 properties. Probeer eens uit te zoeken (gebruik Google) hoe je tóch die 45
+        properties kunt console.loggen met een loop: <strong>Looping through the properties of an object.</strong></li>
+    </ol>
+
+    <p>Probeer dit stukje code uit en gebruik hier een object met 5 properties voor. Ben je nu aan het itereren?</p>
+
+    <div class="light-text">
+      <p>"Open om de antwoorden te zien de developer tools van je browser (rechter muisknop, inspect,
+        tabblad console)"
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
