@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Opdracht - Guess the number game</h1>
+
+    <p>Je gaat je eerste eigen project(je) maken. Je gaat een spel maken in JavaScript!
+
+      "Guess the number" - game, gaat als volgt:</p>
+    <blockquote>&quot;de computer neemt een (semi)willekeurig nummer. De gebruiker probeert het nummer te raden.&quot;
+    </blockquote>
+    <p>Lees de requirements eerst rustig helemaal door. Schrijf voor jezelf op welke functies je denkt nodig te hebben.
+      Oftewel: welke taken moet je programma uitvoeren om de game te spelen?</p>
+
+    <p>Dit spel kun je op 2 manieren maken: kies de manier die voor jou logisch is.</p>
+
+    <ol>
+      <li>In de browser. Als je al weet hoe je JavaScript aan een website toevoegt doe deze opdracht dan in de browser.
+        Gebruik <a href="https://www.w3schools.com/jsref/met_win_prompt.asp" target="_blank">prompt</a> om input te
+        vragen van de gebruiker en alert om de gebruiker iets
+        te melden.</li>
+      <li>In REPL.it. Als je vooral ervaring hebt met REPL.it kies dit dan. Gebruik prompt om input te vragen van de
+        gebruiker en console.log om de gebruiker iets te melden.</li>
+    </ol>
+
+    <h2>Requirements</h2>
+
+    <p>Aan deze eisen moet jouw project voldoen:</p>
+    <ol>
+      <li>Als gebruiker wil ik een initieel bericht zien in die de gebruiker begroet en vraagt om zijn of haar naam.
+        &quot;Welkom! Wat is je naam?&quot;</li>
+      <li>Als gebruiker wil ik mijn naam kunnen invoeren in de browser en op enter drukken.</li>
+      <li>Als gebruiker wil ik nadat ik mijn naam heb ingevoerd, een bericht terug zien: &quot;Hey [naam]&quot;</li>
+      <li>Als gebruiker wil ik na de begroeting met mijn naam gevraagd worden om een nieuwe input met een cijfer. e.g:
+        &quot;Voer een nummer in van 0 tot 25 om te beginnen met raden...&quot;</li>
+      <li>Als spelmaker wil ik dat de gebruiker wel een reeële kans heeft om te winnen. Daarom pak ik een willekeurig
+        getal van 0
+        tot 25. Hint: gebruikt <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
+          target="_blank">Math.random()</a></li>
+      <li>Als gebruiker wil ik een nummer in kunnen voeren en vervolgens op enter klikken.</li>
+      <li>Als gebruiker wil ik een bericht zien als ik het nummer verkeerd heb geraden e.g. &quot;Dat is niet
+        correct&quot;. Daarna wil ik gevraagd worden om opnieuw te raden.</li>
+      <li>Als gebruiker wil ik een bericht ontvangen als ik het nummer goed heb geraden. e.g: &quot;Gefeliciteerd je
+        hebt gewonnen&quot;. Het spel is nu af.</li>
+      <li>Als gebruiker wil ik een bericht zien als het spel af is. &quot;e.g: Dag [naam]. Tot de volgende keer&quot;
+      </li>
+    </ol>
+
+    <br>
+    <br>
+
+    <h2>Bonus</h2>
+    <ul>
+      <li>
+        Een gebruiker krijgt maximaal 5 pogingen om het getal te raden.
+        <ul>
+          <li>Als gebruiker wil ik na elke poging een nieuw bericht zien die mij verteld hoeveel pogingen ik nog over
+            heb.
+          </li>
+          <li>Als gebruiker wil ik een bericht zien als ik helemaal geen pogingen meer over heb. Het spel is nu af.</li>
+        </ul>
+      </li>
+      <li>
+        Zelf de range bepalen waaruit de gebruiker gaat raden.
+        <ul>
+          <li>Als gebruiker wil ik bij de start van het spel gevraagd worden wat het <strong>kleinste</strong> en het
+            <strong>grootste</strong> nummer is dat ik wil raden.
+          </li>
+          <li>Als gebruiker speel ik nu het spel met de nummer-range die ik heb aangegeven bij de start van het spel.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <h2>Design</h2>
+    <p>Er is geen design beschikbaar voor deze opdracht.</p>
+
+    <br>
+    <br>
+
+    <h2>Tips & Tricks</h2>
+    <ul>
+      <li>Begin met het maken van een lijst met todo's voor jezelf. Welke functionaliteiten ga je maken? Staan die in
+        een losse functie? Welke stappen ga je nemen? Schrijf ze uit.</li>
+      <li>Maak je je opdracht in de browser? Gebruik de prompt() en alert() functies van JavaScript. Bedenk je bij elk
+        bericht,
+        wil ik hier iets aan de gebruiker vertellen of wil ik hier iets van de gebruiker ontvangen? <a
+          href="https://javascript.info/alert-prompt-confirm" target="_blank">Input van
+          de gebruiker in de browser</a></li>
+    </ul>
+
+
+    <div class="light-text">
+      <p>&quot;Open <a href="guess-number.html" target="_blank">Guess the Number</a> en speel mijn eerste spel gemaakt
+        met
+        JavaScript&quot;</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

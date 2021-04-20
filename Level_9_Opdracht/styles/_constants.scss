@@ -1,0 +1,18 @@
+// Variables
+$bg-dark: #000;
+$bg-middle: #97d279;
+$bg-light: #c0eea9;
+$bg-basis: #ecffe9;
+$text-dark: #090b08;
+$text-light: #fff;
+$border-color: #000;
+$box-shadow: rgba(0, 0, 0, 0.75);
+
+$padding-basis: 20px;
+
+// Mixins
+@mixin text-basis {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding-basis;
+}

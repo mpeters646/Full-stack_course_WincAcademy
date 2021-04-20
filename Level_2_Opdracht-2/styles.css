@@ -1,0 +1,32 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  border: 2px solid #e4e4e4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.extreme-head {
+  font-size: 32px;
+  color: rgb(3, 136, 129);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 100, 95);
+}
+
+.small {
+  font-size: 11px;
+}

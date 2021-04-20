@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  border: 2px solid #e4e4e4;
+}
+
+header {
+  margin-bottom: 25px;
+  padding: 5px 25px;
+}
+
+main {
+  margin-top: 15px;
+  padding: 10px 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: #333;
+}
+
+a:hover {
+  color: #00ffff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.navbar {
+  margin-bottom: 15px;
+}
+
+.navbar ul {
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.semantic-border {
+  border: 2px solid rgb(33, 231, 221);
+}
+
+main h2 {
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+.extreme-head {
+  font-size: 32px;
+  color: rgb(3, 136, 129);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 100, 95);
+}
+
+.small {
+  font-size: 11px;
+}
+
+main article ul {
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.recepten-link {
+  text-decoration: underline;
+  color: #00c5c5;
+}
+
+.recepten-link:hover {
+  color: #00ffff;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+form button {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+form.recept-form input {
+  margin: 10px 0;
+}
+
+.radio-button,
+.recept-checkbox {
+  width: 5%;
+  display: inline;
+}
+
+input[type='color'] {
+  width: 25%;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blogpost {
+  width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #999;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #ebebeb;
+    color: #4b4b4b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .container {
+    width: 80%;
+    padding: 50px 20px;
+  }
+
+  .blogpost {
+    width: 200px;
+    margin: 10px;
+  }
+
+  .blogpost:nth-child(3) {
+    flex-grow: 1;
+  }
+
+  .blogpost:last-child {
+    flex-grow: 2;
+  }
+}

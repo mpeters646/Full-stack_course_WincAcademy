@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Functions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Opdracht - Functions calling functions</h1>
+
+    <h2>Hey kiddo</h2>
+    <p>We gaan twee functies schrijven, een die begroet en een andere die controleert of iemand volwassen is.</p>
+    <ol>
+      <li>Maak een functie met één parameter: de leeftijd</li>
+      <li>Deze functie moet true retourneren als de leeftijd &gt;= 18 is, en false in alle andere gevallen</li>
+      <li>Bedenk een goede naam voor de functie en de parameter</li>
+      <li>Maak een tweede functie met één parameter: de leeftijd</li>
+      <li>Bedenk een goede naam voor de functie en de parameter</li>
+      <li>Deze tweede functie gebruikt (roept) de eerste functie op, geeft deze de leeftijd, om te controleren of we
+        volwassen worden</li>
+      <li>Als het een volwassene is, zou de tweede functie 'Hello there' moeten retourneren</li>
+      <li>Als het geen volwassene is, zou het "Hey kiddo" moeten retourneren</li>
+    </ol>
+    <p>Gebruik console.log om de geretourneerde waarde van de tweede functie weer te geven
+      experimenteer zodat u zeker weet dat uw functie werkt</p>
+    <br>
+    <br>
+    <div class="light-text">
+      <h2>VAT calculations</h2>
+      <p>In deze oefening laten we je de stappen wat meer uitzoeken.</p>
+      <p>Over bijna alles wat u koopt betaalt u BTW: Belasting Toegevoegde Waarde. Dit is een manier waarop de overheid
+        belastingen op verkochte goederen kan heffen. Het btw-bedrag verschilt per soort aankoop. In Nederland betaal je
+        21%
+        btw op de meeste goederen, 9% btw op eten en 0% op sommige soorten aankopen.</p>
+      <p>Om de btw te berekenen voor een product met 21% btw: basisprijs * 0,21.</p>
+      <p>De prijs voor een computer zonder btw is bijvoorbeeld 1000. Het btw-percentage voor een computer is 21%. De btw
+        zou
+        zijn: 1000 * 0,21, dus 210. De prijs inclusief btw zou zijn: 1000 * 1,21, dus 1210.</p>
+      <p>De prijs voor een brood zonder btw is bijvoorbeeld 2. Het btw-percentage voor een brood is 9%. De btw zou zijn:
+        2
+        *
+        0,09, dus 0,18. De prijs inclusief btw zou zijn: 2 * 1,09, dus 2,18.</p>
+      <p>Om de btw en basisprijs te berekenen van een product dat u met btw hebt gekocht, kunt u de omgekeerde
+        berekening
+        uitvoeren.</p>
+      <p>Als u 1210 (inclusief btw) voor een computer hebt betaald, kunt u: - 1210 / 1,21 om de basisprijs te krijgen -
+        1210
+        -
+        (1210 / 1,21) om de btw van 210 te krijgen</p>
+      <p>Als je 2,18 (inclusief btw) voor een brood hebt betaald, kun je: - 2,18 / 1,09 doen om de basisprijs te krijgen
+        -
+        2,18 -
+        (2,18 / 1,09) om de btw van 0,18 te krijgen</p>
+    </div>
+
+    <br>
+    <br>
+    <h2>VAT exercise 1</h2>
+    <p>Laten we nu wat code schrijven. Laten we eerst een functie schrijven die de basisprijs en het btw-percentage
+      neemt
+      en de
+      prijs inclusief btw retourneert. U moet de berekening van het btw-bedrag in een aparte functie doen. Dus, in de
+      geest
+      van de les: we hebben een hoofdfunctie die de hoofdberekening doet en een andere functie die we aanroepen vanuit
+      deze
+      hoofdfunctie.</p>
+    <p>Zorg ervoor dat uw functies werken door ze met verschillende waarden te testen en het resultaat te controleren
+      met
+      een
+      rekenmachine of pen en papier.</p>
+
+    <br>
+    <br>
+
+    <h2>VAT exercise 2</h2>
+    <p>In deze oefening gaan we de basisprijs en het btw-bedrag berekenen. De belangrijkste functie die u uitvoert, is
+      het
+      bedrag inclusief btw en het btw-percentage. De retourwaarde moet een array zijn met twee elementen: basisprijs en
+      btw-bedrag. Nogmaals: zorg ervoor dat u twee functies gebruikt, waarbij de belangrijkste een andere functie
+      aanroept
+      om
+      een deel van de berekening uit te voeren.</p>
+    <p>Zorg ervoor dat uw functies werken door ze met verschillende waarden te testen en het resultaat te controleren
+      met
+      een
+      rekenmachine of pen en papier.</p>
+
+    <div class="light-text">
+      <p>"Open om de antwoorden te zien de developer tools van je browser (rechter muisknop, inspect,
+        tabblad console)"
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.one:hover {
+  color: lightblue;
+  font-weight: bold;
+}
+
+.two:active {
+  color: red;
+  font-style: italic;
+}
+
+.three:visited {
+  color: yellow;
+}
+
+.four:focus {
+  color: green;
+  font-size: 20px;
+}
+
+/* NVAIGATION */
+ul {
+  list-style-type: none;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  margin: 10px 30px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li:first-child {
+  margin-left: 0;
+}
+
+li:hover {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.currentPage {
+  background-color: #9390bb;
+  padding: 15px;
+}
+
+ul input:focus {
+  border: 5px solid aqua;
+}

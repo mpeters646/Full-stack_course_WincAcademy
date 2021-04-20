@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 25px;
+}
+
+/* SOCIAL MEDIA BUTTONS */
+.social-media {
+  font-size: 20px;
+  position: fixed;
+  top: 100%;
+  right: -240px;
+  transform: translateY(-102%);
+}
+.social-media .icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  padding-right: 30px;
+}
+.social-media a {
+  color: #fff;
+  padding: 20px 40px 20px 20px;
+  display: block;
+}
+.social-media__blog {
+  background-color: #e17b77;
+}
+.social-media__blog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.social-media__blog:hover {
+  transform: translateX(-75%);
+}
+.social-media__twitter {
+  background-color: #00aced;
+}
+.social-media__twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "";
+}
+.social-media__twitter:hover {
+  transform: translateX(-75%);
+}
+.social-media__linkedin {
+  background-color: #007bb6;
+}
+.social-media__linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "";
+}
+.social-media__linkedin:hover {
+  transform: translateX(-75%);
+}
+.social-media__facebook {
+  background-color: #3b5998;
+}
+.social-media__facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "";
+}
+.social-media__facebook:hover {
+  transform: translateX(-75%);
+}
+.social-media__github {
+  background-color: #333;
+}
+.social-media__github::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "";
+}
+.social-media__github:hover {
+  transform: translateX(-75%);
+}/*# sourceMappingURL=style.css.map */
