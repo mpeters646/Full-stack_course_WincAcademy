@@ -1,4 +1,11 @@
-// 'use strict';
+'use strict';
+
+const button = document.querySelectorAll('button');
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', () => {
+    console.log(button[i]);
+  });
+}
 
 /* Subopdracht Landenlijst */
 const resultOfRegionsWithoutDuplicates = randomPersonData.reduce(
@@ -18,61 +25,37 @@ const addRegionListToDom = () => {
     const regions = resultOfRegionsWithoutDuplicates[i].region;
 
     list.appendChild(listItem);
-    listItem.textContent = regions;
+    listItem.innerHTML = regions;
   }
 };
-
 const landenLijst = document.querySelector('#landenLijst');
 landenLijst.addEventListener('click', addRegionListToDom); // ACTIVATIE LANDENLIJST BUTTON!!!!
 
 /* Subopdracht Steenbokvrouwen */
-
-// const listOfCapricornWomen = () => {
-//   for (let i = 0; i < randomPersonData.length; i++) {
-//     if (
-//       randomPersonData[i].age > 30 &&
-//       randomPersonData[i].gender === 'female'
-//     ) {
-//       const list = document.querySelector('#content');
-//       const listItem = document.createElement('li');
-
-//       list.appendChild(listItem);
-//       listItem.textContent = `${randomPersonData[i].name}, ${randomPersonData[i].surname}, ${randomPersonData[i].photo}`;
-
-//       console.log(randomPersonData[i]);
-//     }
-//   }
-// };
-// listOfCapricornWomen();
-
-// const steenbokVrouwen = document.querySelector('#steenbokVrouwen');
-// steenbokVrouwen.addEventListener('click', listOfCapricornWomen); //ACTIVATIE STEENBOKVROUWEN BUTTON!!!
-
-/* TESTDATA */
 const listOfCapricornWomen = () => {
   for (let i = 0; i < randomPersonData.length; i++) {
-    const getZodiacSign = (day, month) => {
+    const dayOfBirth = Number(randomPersonData[i].birthday.dmy.substring(0, 2));
+    const monthOfBirth = Number(
+      randomPersonData[i].birthday.dmy.substring(3, 5)
+    );
+
+    if (
+      (monthOfBirth == 1 && dayOfBirth < 20) ||
+      (monthOfBirth == 12 && dayOfBirth >= 22)
+    ) {
       if (
-        (month == 1 && day < 20) ||
-        (month == 12 &&
-          day >= 22 &&
-          randomPersonData[i].age > 30 &&
-          randomPersonData[i].gender === 'female')
+        randomPersonData[i].age > 30 &&
+        randomPersonData[i].gender === 'female'
       ) {
-        return randomPersonData[i];
+        const list = document.querySelector('#content');
+        const listItem = document.createElement('li');
+
+        list.appendChild(listItem);
+        listItem.textContent = `${randomPersonData[i].name}, ${randomPersonData[i].surname}, ${randomPersonData[i].photo}`;
       }
-    };
-    const list = document.querySelector('#content');
-    const listItem = document.createElement('li');
-
-    list.appendChild(listItem);
-    listItem.textContent = `${randomPersonData[i].name}, ${randomPersonData[i].surname}, ${randomPersonData[i].photo}`;
-
-    console.log(randomPersonData[i]);
+      // console.log(randomPersonData[i]);
+    }
   }
 };
 const steenbokVrouwen = document.querySelector('#steenbokVrouwen');
 steenbokVrouwen.addEventListener('click', listOfCapricornWomen); //ACTIVATIE STEENBOKVROUWEN BUTTON!!!
-
-const dayOfBirth = randomPersonData[0].birthday.dmy;
-console.log(typeof dayOfBirth);
