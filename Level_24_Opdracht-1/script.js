@@ -3,7 +3,7 @@
 const button = document.querySelectorAll('button');
 for (let i = 0; i < button.length; i++) {
   button[i].addEventListener('click', () => {
-    console.log(button[i]);
+    // console.log(button[i]);
   });
 }
 
@@ -26,6 +26,7 @@ const addRegionListToDom = () => {
 
     list.appendChild(listItem);
     listItem.innerHTML = regions;
+    console.log(regions);
   }
 };
 const landenLijst = document.querySelector('#landenLijst');
@@ -39,14 +40,8 @@ const listOfCapricornWomen = () => {
       randomPersonData[i].birthday.dmy.substring(3, 5)
     );
 
-    if (
-      (monthOfBirth == 1 && dayOfBirth < 20) ||
-      (monthOfBirth == 12 && dayOfBirth >= 22)
-    ) {
-      if (
-        randomPersonData[i].age > 30 &&
-        randomPersonData[i].gender === 'female'
-      ) {
+    if ((monthOfBirth == 1 && dayOfBirth < 20) || (monthOfBirth == 12 && dayOfBirth >= 22)) {
+      if (randomPersonData[i].age > 30 && randomPersonData[i].gender === 'female') {
         const list = document.querySelector('#content');
         const listItem = document.createElement('li');
 
