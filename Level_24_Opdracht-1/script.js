@@ -40,8 +40,14 @@ const listOfCapricornWomen = () => {
       randomPersonData[i].birthday.dmy.substring(3, 5)
     );
 
-    if ((monthOfBirth == 1 && dayOfBirth < 20) || (monthOfBirth == 12 && dayOfBirth >= 22)) {
-      if (randomPersonData[i].age > 30 && randomPersonData[i].gender === 'female') {
+    if (
+      (monthOfBirth == 1 && dayOfBirth < 20) ||
+      (monthOfBirth == 12 && dayOfBirth >= 22)
+    ) {
+      if (
+        randomPersonData[i].age > 30 &&
+        randomPersonData[i].gender === 'female'
+      ) {
         const list = document.querySelector('#content');
         const listItem = document.createElement('li');
 
