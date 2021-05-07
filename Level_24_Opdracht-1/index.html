@@ -10,9 +10,42 @@
   <script defer src="script.js"></script>
 
   <style>
-    /* .hidden {
-      display: none;
-    } */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+    * {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      /* content: "➢"; */
+      /* content: "☞"; */
+      content: "➯";
+      padding-right: 5px;
+      font-size: 1.5rem;
+    }
+
+    figure {
+      display: inline-flex;
+    }
+
+    figure img {
+      margin-left: -30px;
+    }
+
+    figcaption {
+      padding: 20px 20px;
+    }
   </style>
 </head>
 
