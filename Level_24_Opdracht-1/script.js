@@ -19,7 +19,7 @@ const resultOfRegionsWithoutDuplicates = sortedRandomPersonData.reduce(
   []
 );
 
-const addRegionListToDom = () => {
+const listOfRegions = () => {
   clearList();
   for (let i = 0; i < resultOfRegionsWithoutDuplicates.length; i++) {
     const list = document.querySelector('#content');
@@ -31,7 +31,7 @@ const addRegionListToDom = () => {
   }
 };
 const landenLijst = document.querySelector('#landenLijst');
-landenLijst.addEventListener('click', addRegionListToDom); // ACTIVATIE LANDENLIJST BUTTON!!!!
+landenLijst.addEventListener('click', listOfRegions); // ACTIVATIE LANDENLIJST BUTTON!!!!
 
 /* Subopdracht Steenbokvrouwen */
 const listOfCapricornWomen = () => {
@@ -72,4 +72,26 @@ const listOfCapricornWomen = () => {
 const steenbokVrouwen = document.querySelector('#steenbokVrouwen');
 steenbokVrouwen.addEventListener('click', listOfCapricornWomen); //ACTIVATIE STEENBOKVROUWEN BUTTON!!!
 
+/* Subopdracht Ouwe Creditcards */
+const listOfOldCreditcards = () => {
+  clearList();
+  const now = new Date();
+  const list = document.querySelector('#content');
+  list.innerText = now;
+};
+document
+  .querySelector('#ouweCreditcards')
+  .addEventListener('click', listOfOldCreditcards); //ACTIVATIE OUWE CREDITCARDS
+
 /* TEST */
+let today = new Date();
+
+let dd = today.getDate();
+let mm = today.getMonth() + 1;
+let yyyy = today.getFullYear();
+
+mm = (mm < 10 ? '0' : '') + mm;
+dd = (dd < 10 ? '0' : '') + dd;
+
+const date = document.createTextNode(`${dd}-${mm}-${yyyy}`);
+console.log(today, date);
