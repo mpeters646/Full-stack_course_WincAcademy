@@ -12,3 +12,5 @@ let yyyy = today.getFullYear();
 
 mm = (mm < 10 ? '0' : '') + mm;
 dd = (dd < 10 ? '0' : '') + dd;
+
+/* Test */
