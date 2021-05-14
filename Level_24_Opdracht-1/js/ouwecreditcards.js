@@ -13,13 +13,13 @@ const listOfOldCreditcards = () => {
       const list = document.querySelector('#content');
       const listItem = document.createElement('li');
       const name = document.createElement('span');
-      name.innerHTML = fullName;
+      name.appendChild(document.createTextNode(fullName));
       const phone = document.createElement('span');
-      phone.innerHTML = phoneNumber;
+      phone.appendChild(document.createTextNode(phoneNumber));
       const card = document.createElement('span');
-      card.innerHTML = ccNumber;
+      card.appendChild(document.createTextNode(ccNumber));
       const expires = document.createElement('span');
-      expires.innerHTML = expirationDate;
+      expires.appendChild(document.createTextNode(expirationDate));
 
       list.appendChild(listItem);
       listItem.appendChild(name);

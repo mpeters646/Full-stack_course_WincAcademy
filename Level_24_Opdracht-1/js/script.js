@@ -14,3 +14,13 @@ mm = (mm < 10 ? '0' : '') + mm;
 dd = (dd < 10 ? '0' : '') + dd;
 
 /* Test */
+
+/* sorting by expirationDate */
+const sortByExpirationDate = randomPersonData => {
+  return randomPersonData.sort((a, b) => {
+    return (
+      new Date(a.credit_card.expiration) - new Date(b.credit_card.expiration)
+    );
+  });
+};
+console.log(sortByExpirationDate(randomPersonData));
