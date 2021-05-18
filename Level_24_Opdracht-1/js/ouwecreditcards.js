@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 const sortByExpirationDate = randomPersonData => {
   return randomPersonData.sort((a, b) => {
@@ -17,7 +17,6 @@ const listOfOldCreditcards = () => {
     const phoneNumber = `Phone: ${person.phone}`;
     const ccNumber = `Card: ${person.credit_card.number}`;
     const expirationDate = `Expires: ${person.credit_card.expiration}`;
-    const expireYear = person.credit_card.expiration.slice(-2);
 
     if (person.age > 17) {
       const list = document.querySelector('#content');
@@ -36,10 +35,6 @@ const listOfOldCreditcards = () => {
       listItem.appendChild(phone);
       listItem.appendChild(card);
       listItem.appendChild(expires);
-
-      console.log(person);
-      console.log(person.credit_card.expiration);
-      console.log(`Year of expire: ${expireYear}`);
     }
   });
 };
