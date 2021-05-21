@@ -5,70 +5,54 @@ const clearList = () => {
 };
 
 /* Test */
-const people = [
-  { id: 12, name: 'Billy', dob: '1998-10-05' },
-  { id: 123, name: 'Bart', dob: '1993-02-15' },
-  { id: 45, name: 'Belinda', dob: '1996-01-31' },
-  { id: 67, name: 'Bonnie', dob: '1998-04-09' },
-  { id: 89, name: 'Brenda', dob: '1996-07-08' },
-  { id: 34, name: 'Bobby', dob: '1994-09-12' },
-  { id: 234, name: 'Blake', dob: '2000-01-01' },
+// https://www.delftstack.com/howto/javascript/convert-string-to-date-in-javascript/
 
-  // { id: 12, name: 'Billy', dob: '1998/10/05' },
-  // { id: 123, name: 'Bart', dob: '1993/02/15' },
-  // { id: 45, name: 'Belinda', dob: '1996/01/31' },
-  // { id: 67, name: 'Bonnie', dob: '1998/04/09' },
-  // { id: 89, name: 'Brenda', dob: '1996/07/08' },
-  // { id: 34, name: 'Bobby', dob: '1994/09/12' },
-  // { id: 234, name: 'Blake', dob: '2000/01/01' },
+/* https://www.youtube.com/watch?v=rRgD1yVwIvE  ** Timeline: 9:03 ** */
+const companies = [
+  { name: 'Company One', category: 'Finance', start: 1981, end: 2003 },
+  { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+  { name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+  { name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+  { name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+  { name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+  { name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+  { name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+  { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
 ];
 
-// console.log('\n\n sort by date');
-// console.log(people.sort(byDate));
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-// console.log('\n\n sort by birthday as it occurs during the year');
-// console.log(people.sort(byBirthday));
-
-function byDate(a, b) {
-  // chronologically by year, month, then day
-  return new Date(a.dob).valueOf() - new Date(b.dob).valueOf();
+// for loop
+for (let i = 0; i < companies.length; i++) {
+  // console.log(companies[i]);
 }
 
-function byBirthday(a, b) {
-  // by month and then by day
-  let d1 = new Date(a.dob);
-  let d2 = new Date(b.dob);
+// foreach
+companies.forEach(company => {
+  // console.log(company);
+});
 
-  // console.log(d1.getDate(), d1.getUTCDate(), d1.getMonth(), d1.getUTCMonth());
-
-  if (d1.getUTCMonth() > d2.getUTCMonth()) {
-    return 1;
-  } else if (d1.getUTCMonth() < d2.getUTCMonth()) {
-    return -1;
-  } else {
-    // same month
-    return d1.getUTCDate() - d2.getUTCDate();
+// filter
+/* let canDrink = [];
+for (let i = 0; i < ages.length; i++) {
+  if (ages[i] >= 21) {
+    canDrink.push(ages[i]);
   }
-}
+} */
 
-let date = new Date(randomPersonData[199].credit_card.expiration);
+/* const canDrink = ages.filter(age => {
+  if (age >= 21) {
+    return true;
+  }
+}); */
 
-// console.log(date.toDateString());
-// console.log(date.toLocaleDateString());
-console.log(
-  date.toLocaleString({
-    year: '2-digit', //numeric, 2-digit
-    month: 'long', // numeric, 2-digit, long, short, narrow
-    day: 'numeric', // numeric, 2-digit
-    weekday: 'long', //long, short, narrow
-    hour: 'numeric', //numeric, 2-digit
-    minute: 'numeric', // numeric, 2-digit
-    second: 'numeric', //numeric, 2-digit
-    timeZoneName: 'long', //long, short
-  })
-);
+const canDrink = ages.filter(age => age >= 21);
 
-console.log(randomPersonData[199]);
-console.log(date.toLocaleDateString());
+console.log(ages);
+console.log(canDrink);
 
-// https://www.delftstack.com/howto/javascript/convert-string-to-date-in-javascript/
+// map
+
+// sort
+
+// reduce

@@ -13,6 +13,20 @@ const listOfOldCreditcards = () => {
   sortByExpirationDate(randomPersonData);
 
   randomPersonData.forEach(person => {
+    const parts = person.credit_card.expiration.split('/');
+    const year = parseInt('20' + parts[1]);
+    const month = parseInt(parts[0] - 1);
+    const expireDate = new Date(parseInt(year), parseInt(month));
+    const date = expireDate.toDateString();
+    const newDate = [year, month];
+
+    console.log(person.credit_card);
+    console.log(parts);
+    console.log(date);
+    console.log(year, month);
+    console.log(newDate);
+
+    /* ***************************************************************** */
     const fullName = `${person.name} ${person.surname}`;
     const phoneNumber = `Phone: ${person.phone}`;
     const ccNumber = `Card: ${person.credit_card.number}`;
