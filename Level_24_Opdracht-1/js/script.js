@@ -5,9 +5,10 @@ const clearList = () => {
 };
 
 /* Test */
+
 // https://www.delftstack.com/howto/javascript/convert-string-to-date-in-javascript/
 
-/* https://www.youtube.com/watch?v=rRgD1yVwIvE  ** Timeline: 9:03 ** */
+/* https://www.youtube.com/watch?v=rRgD1yVwIvE  */
 const companies = [
   { name: 'Company One', category: 'Finance', start: 1981, end: 2003 },
   { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
@@ -46,13 +47,101 @@ for (let i = 0; i < ages.length; i++) {
   }
 }); */
 
-const canDrink = ages.filter(age => age >= 21);
+// const canDrink = ages.filter(age => age >= 21);
 
-console.log(ages);
-console.log(canDrink);
+// console.log(ages);
+// console.log(canDrink);
+
+// Filter retail comanies
+/* const retailCompanies = companies.filter(company => {
+  if (company.category === 'Retail') {
+    return true;
+  }
+}); */
+
+const retailCompanies = companies.filter(
+  company => company.category === 'Retail'
+);
+// console.log(retailCompanies);
+
+// Get companies from the 80s
+const eightiesCompanies = companies.filter(
+  company => company.start >= 1980 && company.start <= 1989
+);
+// console.log(eightiesCompanies);
+
+//  Get companies that lasted 10 years or more
+const lastedTenYears = companies.filter(
+  company => company.end - company.start >= 10
+);
+// console.log(lastedTenYears);
 
 // map
+// Create array of company names
+// const companyNames = companies.map(function (company) {
+//   return company.name;
+// });
+
+/* const testMap = companies.map(function (company) {
+  return `${company.name} [${company.start} - ${company.end}]`;
+}); */
+
+const testMap = companies.map(
+  company => `${company.name} [${company.start} - ${company.end}]`
+);
+
+// const ageMap = ages.map(age => Math.sqrt(age)).map(age => age * 2);
+// console.log(ageMap);
 
 // sort
+// Sort companies by start year
+
+/* const sortedCompanies = companies.sort(function (c1, c2) {
+  if (c1.start > c2.start) {
+    return 1;
+  } else {
+    return -1;
+  }
+}); */
+
+const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+// console.log(sortedCompanies);
+
+// Sort ages
+// const sortAges = ages.sort((a, b) => a - b);
+// console.log(sortAges);
 
 // reduce
+
+/* let ageSum = 0;
+for (let i = 0; i < ages.length; i++) {
+  ageSum += ages[i];
+} */
+
+/* const ageSum = ages.reduce(function (total, age) {
+  return total + age;
+}, 0); */
+
+// const ageSum = ages.reduce((total, age) => total + age, 0);
+
+// Get total years for all companies
+
+/* const totalYears = companies.reduce(function (total, company) {
+  return total + (company.end - company.start);
+}, 0); */
+
+const totalYears = companies.reduce(
+  (total, company) => total + (company.end - company.start),
+  0
+);
+
+// console.log(totalYears);
+
+// Combine Methods
+
+const combined = ages
+  .map(age => age * 2)
+  .filter(age => age >= 40)
+  .sort((a, b) => a - b)
+  .reduce((a, b) => a + b, 0);
+console.log(combined);
