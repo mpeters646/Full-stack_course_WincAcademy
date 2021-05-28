@@ -21,6 +21,7 @@ const getTronaldDumpTweet = async () => {
   });
   const json = await response.json();
   console.log(`Tronald Dump Tweet: ${json.value}`);
+  console.log(json);
 };
 
 // PokeAPI
