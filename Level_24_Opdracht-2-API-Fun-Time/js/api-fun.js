@@ -1,3 +1,8 @@
+const clearContent = () => {
+  document.querySelector('#apiContent').innerHTML = '';
+  document.querySelector('#apiContent').classList.remove('quote');
+};
+
 // Random Dad joke
 const getDadJoke = async () => {
   const response = await fetch('https://icanhazdadjoke.com/', {
@@ -7,8 +12,19 @@ const getDadJoke = async () => {
     },
   });
   const json = await response.json();
-  console.log(`Dad Joke: ${json.joke}`);
-  console.log(json);
+  const img = document.createElement('img');
+
+  clearContent();
+
+  const content = document.querySelector('#apiContent');
+
+  content.classList.add('quote');
+  content.innerHTML = json.joke;
+
+  /* document.querySelector('#apiContent').classList.add('quote');
+
+  img.src = `https://icanhazdadjoke.com/j/${json.id}.png`;
+  document.querySelector('#apiContent').appendChild(img); */
 };
 
 // Random Tronald Dump tweet
@@ -20,8 +36,13 @@ const getTronaldDumpTweet = async () => {
     },
   });
   const json = await response.json();
-  console.log(`Tronald Dump Tweet: ${json.value}`);
-  console.log(json);
+
+  clearContent();
+
+  const content = document.querySelector('#apiContent');
+
+  content.classList.add('quote');
+  content.innerHTML = json.value;
 };
 
 // PokeAPI
