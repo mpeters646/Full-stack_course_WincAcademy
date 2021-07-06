@@ -12,4 +12,8 @@
 
 - Hoe staat Scrum in relatie tot Agile werken?
 
-  - Scrum is een simpele en flexibele _Agile methode_
+  - Scrum is een manier van werken, met behulp van de Agile techniek wordt er gestreefd naar een zo’n effectief en flexibel mogelijke werkwijze. In een organisatie wordt een team opgesteld die gebruik maakt van deze methode, waarbij projecten op een zeer productieve wijze stapsgewijs worden opgeleverd.
+
+- Waarom is Scrum specifiek zo geschikt voor development werk?
+
+  -
