@@ -18,6 +18,7 @@
   _Wie is waar verantwoordelijk voor?_
 
 - ### Wat is de rol van de Product owner?
+
   _Waarin onderscheid deze rol zich van de Srum master?_
 
 ## 3. Scrum Events
@@ -33,6 +34,7 @@
   _Wanneer heb je een Refinement (in welke fase)?_
 
 - ### Wat is Standup?
+
   _Wat wordt er wel/niet besproken tijdens de Standup?_  
   _Wanneer heb je een Standup (in welke fase)?_
 
