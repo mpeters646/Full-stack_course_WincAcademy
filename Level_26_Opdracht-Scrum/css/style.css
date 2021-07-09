@@ -7,20 +7,23 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
 }
 
 .container {
+  width: 600px;
   margin: 0 auto;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
   color: #4f8bc9;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
-ul {
-  margin-left: 15px;
+ul, ol {
+  margin: 0 15px;
 }
 
 li {
@@ -28,6 +31,12 @@ li {
 }
 li h3 {
   margin-top: 3rem;
+}
+
+a {
+  color: #4f8bc9;
+  text-decoration: none;
+  font-style: italic;
 }
 
 .img, .img-sm, .img-xs {
@@ -39,6 +48,10 @@ li h3 {
   width: 500px;
 }
 
+.img-sm {
+  width: 500px;
+}
+
 .img-xs {
   width: 150px;
 }
@@ -47,6 +60,20 @@ footer p {
   font-size: 0.8rem;
   text-align: center;
   padding: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 900px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
