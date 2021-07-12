@@ -11,13 +11,18 @@ test('Should be null', () => {
 });
 
 test('checkValue Should be falsy when argument is undefined', () => {
-  expect(functions.checkValue()).toBeUndefined();
+  // expect(functions.checkValue()).toBeUndefined();
+  expect(functions.checkValue(undefined)).toBeFalsy();
 });
 
 test('User should be Brad Traversy object', () => {
-  expect(
-    functions.createUser().firstName + ' ' + functions.createUser().lastName
-  ).toBe('Brad Traversy');
+  // expect(
+  //   functions.createUser().firstName + ' ' + functions.createUser().lastName
+  // ).toBe('Brad Traversy');
+  expect(functions.createUser()).toEqual({
+    firstName: 'Brad',
+    lastName: 'Traversy',
+  });
 });
 
 // Tests zijn eigenlijk gewoon functies. Om dat te laten zien laten we je
@@ -28,13 +33,15 @@ test('Should be under or equal to 1600', () => {
   const load1 = 800;
   const load2 = 800;
   // expect(load1 + load2).toBe.....
-  expect(load1 + load2).toBe(1600);
+  // expect(load1 + load2).toBe(1600);
+  expect(load1 + load2).toBeLessThanOrEqual(1600);
 });
 
 // Regex
 test('There is no I in team', () => {
   //  expect('team').not.to..........;
-  expect('team').not.toMatch(/I/);
+  // expect('team').not.toMatch(/I/);
+  expect('team').not.toMatch(/I/i);
 });
 
 // Arrays
