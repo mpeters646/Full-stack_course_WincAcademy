@@ -22,7 +22,7 @@ Doe een GET request op http://www.omdbapi.com/?i=tt3896198
 
 Voeg nu aan de parameters het volgende toe. Wanneer je ze aan de parameters toevoegt zie je ze verschijnen in je request URL. Doe opnieuw de GET request:
 
-key: apikey value: 896f18d6
+key: apikey value: API_key
 
 - Welke response krijg je nu?
   JSON file met een film
