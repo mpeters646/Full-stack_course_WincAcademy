@@ -144,4 +144,11 @@ const combined = ages
   .filter(age => age >= 40)
   .sort((a, b) => a - b)
   .reduce((a, b) => a + b, 0);
-console.log(combined);
+// console.log(combined);
+
+/* LIVE LES 26-8-2021 */
+
+const greekNames = randomPersonData.filter(
+  person => person.region === 'Greece'
+);
+console.log(greekNames);
