@@ -34,11 +34,11 @@ test("Should be under or equal to 1600", () => {
 
 // Regex
 test("There is no I in team", () => {
-  // expect('team').not.toBe......
+  expect("team").toEqual(expect.not.stringMatching("I"));
 });
 
 // Arrays
 test("Admin should be in usernames", () => {
   usernames = ["john", "karen", "admin"];
-  // expect(usernames).toBe('admin')
+  expect(usernames).toContain("admin");
 });
