@@ -16,5 +16,5 @@ console.log(numC / numD);
 
 //  Nu wordt alleen regel 1 uitgevoerd
 
-// met ctrl / creeer je een singleline comment
-/* met shift alt a creeer je een blok of multiline coomment */
+// met (ctrl /) creeer je een singleline comment
+/* met (shift alt a) creeer je een blok of multiline coomment */
