@@ -1,4 +1,4 @@
-console.log('Hallo Winc Academy studenten');
+console.log("Hallo Winc Academy studenten");
 
 /*
 Met een blok comment zet je meerdere regels in je comment
@@ -15,3 +15,6 @@ console.log(numC / numD);
 */
 
 //  Nu wordt alleen regel 1 uitgevoerd
+
+// met ctrl / creeer je een singleline comment
+/* met shift alt a creeer je een blok of multiline coomment */
