@@ -1,27 +1,21 @@
-const age = 39;
+const age = 19;
 const isFemale = true;
-const driverStatus = '';
+const driverStatus = "bob";
 
 if (age >= 18) {
-  console.log('Wees welkom en kom gezellig binnen.');
+  console.log("You are allowed to come in.");
 } else {
-  console.log(
-    'Je bent nog geen 18 en mag daarom niet naar binnen, kom maar terug als je 18 bent.'
-  );
+  console.log("You are not allowed to come in, because you are to young!");
 }
 
 if (isFemale) {
-  console.log('Op onze Ladiesnight');
+  console.log("Welcome to the ladiesnight");
 } else {
-  console.log(
-    'Sorry maar vanavond is het Ladiesnight en worden er geen mannen binnen gelaten. Tot ziens op een andere avond.'
-  );
+  console.log("Sorry only ladies tonight.");
 }
 
-if (driverStatus == 'bob') {
-  console.log('Rij voorzichtig naar huis.');
+if (driverStatus == "bob") {
+  console.log("Get home safely.");
 } else {
-  console.log(
-    'Na de drankjes die je hebt gehad mag je niet meer zelf rijden, zal ik een taxi voor je bellen?'
-  );
+  console.log("You have a few drinks, you're not allowed to drive!");
 }
