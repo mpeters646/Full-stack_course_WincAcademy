@@ -1,49 +1,43 @@
 const age = 19;
 const isFemale = true;
-const driverStatus = 'bob';
-const name = 'Bram';
-const totalAmount = 26;
+const driverStatus = "";
+const name = "Sarah";
+const totalAmount = 100;
 
 if (age >= 18) {
-  console.log('Wees welkom en kom gezellig binnen.');
+  console.log("You are allowed to come in.");
 } else {
-  console.log(
-    'Je bent nog geen 18 en mag daarom niet naar binnen, kom maar terug als je 18 bent.'
-  );
+  console.log("You are not allowed to come in, because you are to young!");
 }
 
 if (isFemale) {
-  console.log('Op onze Ladiesnight');
+  console.log("Welcome to the ladiesnight");
 } else {
-  console.log(
-    'Sorry maar vanavond is het Ladiesnight en worden er geen mannen binnen gelaten. Tot ziens op een andere avond.'
-  );
+  console.log("Sorry only ladies tonight.");
 }
 
-if (driverStatus == 'bob') {
-  console.log('Rij voorzichtig naar huis.');
+if (driverStatus == "bob") {
+  console.log("Get home safely.");
 } else {
-  console.log(
-    'Na de drankjes die je hebt gehad mag je niet meer zelf rijden, zal ik een taxi voor je bellen?'
-  );
+  console.log("You have a few drinks, you're not allowed to drive!");
 }
 
 if (age >= 18 && age <= 25) {
-  console.log('Je krijgt 50% korting!');
+  console.log("You get a 50% discount!");
 }
 
-if (name === 'Bram' || name === 'Sarah') {
-  console.log('Je krijgt een gratis biertje');
+if (name === "Bram" || name === "Sarah") {
+  console.log("You get a free beer");
 } else {
-  console.log('Je heet geen Bram of Sarah en moet gewoon betalen!');
+  console.log("Sorry only Bram or Sarah get a free beer.");
 }
 
 if (totalAmount >= 100) {
-  console.log('Je krijgt een gratis flesje champagne');
+  console.log("You get a free bottle of champagne");
 } else if (totalAmount > 50) {
-  console.log('Je krijgt een gratis portie nachos');
+  console.log("You get a free portion of nachos");
 } else if (totalAmount > 25) {
-  console.log('Je krijgt een gratis portie (vega)bittetballen');
+  console.log("You get a free portion of (veggie) bittet balls");
 } else {
-  console.log('Bij een bestelling vanaf €25 krijg je lekkere extras');
+  console.log("With an order above € 25 you get tasty extras");
 }
