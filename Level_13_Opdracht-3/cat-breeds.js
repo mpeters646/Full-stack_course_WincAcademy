@@ -62,26 +62,3 @@ const catBreeds = [
 ];
 
 module.exports = { catBreeds };
-/* 
-console.log(
-  'Naam van het laatste kattenras:',
-  catBreeds[catBreeds.length - 1].name
-);
-
-console.log('Energy levels van de eerste kat:', catBreeds[0].energy_level);
-
-console.log(
-  'Het eerste temperament van de tweede kat:',
-  catBreeds[1].temperament[0]
-);
-
-console.log(
-  'Het laatste temperament van de derde kat:',
-  catBreeds[2].temperament[4]
-);
-
-console.log(
-  'Het favoriete voedsel van de derde kat:',
-  catBreeds[2].food.favourite_food
-);
- */
