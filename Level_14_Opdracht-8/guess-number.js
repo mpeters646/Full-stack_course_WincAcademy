@@ -1,15 +1,15 @@
 const theGame = () => {
-  const person = prompt('Welkom! Wat is je naam?', 'Harry Potter');
+  const person = prompt("Welcome! What's your name?", "Harry Potter");
 
   if (person != null) {
     alert(`Hey ${person}!`);
   }
 
   let lowestNumber = parseInt(
-    prompt(`Wat is het laagste getal waarmee je wilt spelen?`)
+    prompt(`What is the lowest number you want to play with?`)
   );
   let highestNumber = parseInt(
-    prompt(`Wat is het hoogste getal waarmee je wilt spelen?`)
+    prompt(`What is the highest number you want to play with?`)
   );
 
   // const getRandomNumberBetweenTwoNumbers = (min, max) => {
@@ -33,24 +33,24 @@ const theGame = () => {
     lowestNumber,
     highestNumber
   );
-  console.log(`Winnende nummer: ${randomNumber}`);
+  console.log(`winning number: ${randomNumber}`);
 
   for (i = 0; i < 5; i++) {
     const getNumberOfGamer = () => {
       const numberOfGamer = prompt(
-        `Voer een nummer in van ${lowestNumber} tot ${highestNumber} om te raden...`
+        `Enter a number from ${lowestNumber} till ${highestNumber} to guess...`
       );
       if (numberOfGamer >= lowestNumber && numberOfGamer <= highestNumber) {
         return numberOfGamer;
       } else if (isNaN(numberOfGamer) || numberOfGamer === null) {
         alert(
-          `Dit is geen nummer, vul een nieuw getal tussen de ${lowestNumber} en ${highestNumber} in`
+          `This is not a number, enter a new number between ${lowestNumber} and ${highestNumber}`
         );
         return numberOfGamer;
         getNumberOfGamer();
       } else {
         alert(
-          `Jou nummer is groter dan ${highestNumber} of kleiner dan ${lowestNumber}, kies een nieuw getal tussen de ${lowestNumber} en ${highestNumber}`
+          `Your number is greater than ${highestNumber} or less than ${lowestNumber}, choose a new number between ${lowestNumber} and ${highestNumber}`
         );
         return numberOfGamer;
         getNumberOfGamer();
@@ -60,22 +60,22 @@ const theGame = () => {
     let numberOfGamer = getNumberOfGamer();
 
     if (randomNumber == numberOfGamer) {
-      console.log(`Jou ingevoerde getal: ${numberOfGamer} is juist`);
+      console.log(`Your entered number: ${numberOfGamer} is correct`);
       alert(
-        `Gefeliciteerd ${person} je hebt gewonnen, ${numberOfGamer} is het winnende getal.`
+        `Congratulations ${person} you won, ${numberOfGamer} is the winning number.`
       );
       break;
     } else if (i < 4 && i !== 5) {
-      console.log(`Jou ingevoerde getal: ${numberOfGamer} is niet juist`);
+      console.log(`Your entered number: ${numberOfGamer} is not correct`);
       alert(
-        `Jou ingevoerde getal: ${numberOfGamer} is niet juist, je ${
+        `Your entered number: ${numberOfGamer} is not correct, your ${
           i + 1
-        }e beurt van 5 is voorbij.`
+        }th turn of 5 is over.`
       );
     } else {
-      console.log(`Jou ingevoerde getal: ${numberOfGamer} is niet juist`);
+      console.log(`Your entered number: ${numberOfGamer} is not correct`);
       alert(
-        `Jou ingevoerde getal: ${numberOfGamer} is niet juist, al je beurten zijn voorbij het spel is uit. Dag ${person} tot de volgende keer.`
+        `Your entered number: ${numberOfGamer} is not correct, the game is over. Goodbye ${person} until next time.`
       );
     }
   }
