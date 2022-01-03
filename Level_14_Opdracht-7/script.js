@@ -1,32 +1,37 @@
 // WHILE loop
+console.log("While loop:");
 
-const colors = ['yellow', 'blue', 'red', 'orange'];
+const colors = ["yellow", "blue", "red", "orange"];
 let i = 0;
 
 while (i < colors.length) {
   console.log(colors[i]);
   i++;
 }
-
+console.log("**********");
 // FOR loop
+console.log("For loop:");
 
 for (let i = 0; i < colors.length; i++) {
   console.log(colors[i]);
 }
+console.log("**********");
 
 // FOREACH loop
-colors.forEach((color) => console.log(color));
+console.log("Foreach loop");
+colors.forEach(color => console.log(color));
+console.log("**********");
 
-// 1. De while loop neemt 4 regels inbeslag, de for loop neemt 3 regels inbeslag
-// 2. De foreach loop neemt 1 regel inbeslag
+// 1. The while loop takes 4 lines, the for loop takes 3 lines
+// 2. The foreach loop takes up 1 line
 
 // FOR IN loop
 const persons = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   age: 39,
-  gender: 'male',
-  hobby: 'painting',
+  gender: "male",
+  hobby: "painting",
 };
 
 for (property in persons) {
