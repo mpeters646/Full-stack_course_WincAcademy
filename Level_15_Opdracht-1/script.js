@@ -1,7 +1,7 @@
-// document.body.innerHTML = 'Ik ben een nieuwe paragraaf';
+// document.body.innerHTML = "I'm a new paragraph";
 
-// const firstSection = document.getElementById('first-section');
+const firstSection = document.getElementById("first-section");
+// console.log(firstSection);
 
-// let firstSection = document.getElementById('first-section');
-
-const paragraph = document.getElementsByClassName('paragraph');
+const paragraph = document.getElementsByClassName("paragraph");
+// console.log(paragraph);
