@@ -1,20 +1,12 @@
-const evenOddReporter = () => {
-  for (i = 0; i <= 20; i++) {
-    if (i % 2 == 0) {
-      console.log(`${i} is even`);
-    } else {
-      console.log(`${i} is odd`);
-    }
-  }
-};
-// evenOddReporter();
+const myPara = document.getElementById("myPara");
 
-let w = 0;
-while (w < 5) {
-  console.log(`This is while iteration number ${w}`);
-  w++;
-}
+myPara.classList.add("bold", "big-font");
+myPara.classList.remove("bold");
+myPara.classList.replace("big-font", "red-bg");
 
-for (i = 0; i < 5; i++) {
-  console.log(`This is for iteration number ${i}`);
-}
+myPara.classList.toggle("red-bg");
+myPara.classList.toggle("red-bg");
+
+console.log(myPara.classList.contains("white-text"));
+
+console.log(myPara.classList);
