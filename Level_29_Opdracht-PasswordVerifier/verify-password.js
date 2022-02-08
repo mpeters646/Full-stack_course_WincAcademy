@@ -1,6 +1,5 @@
-const hasRightLength = (a, b) => {
-  // Schrijf functie
-  return a + b;
+const verifyPassword = (password) => {
+  // Write function
 };
 
-module.exports = hasRightLength;
+module.exports = verifyPassword;
